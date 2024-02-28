@@ -228,6 +228,9 @@ margin: 0 auto 30px;
 
 /* Responsive Mobile */
 @media(max-width:768px) {
+  .header .content{
+    text-align: center;
+  }
   .navbar {
     flex-direction: column;
     height: 120px;
