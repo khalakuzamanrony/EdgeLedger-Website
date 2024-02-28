@@ -78,7 +78,7 @@ img {
   position: relative;
 }
 /* Image for blog page */
-.header .blog{
+.blog{
   background: url(../images/home/blog.jpg) no-repeat center center/cover;
   height: 30vh;
 }
