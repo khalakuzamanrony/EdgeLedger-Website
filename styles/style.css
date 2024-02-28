@@ -62,6 +62,9 @@ img {
 .navbar a:hover {
   border-bottom: 2px solid #28a745;
 }
+.navbar .logo-link:hover {
+  border-bottom: none
+}
 
 .navbar h1 {
   font-weight: 400;
@@ -75,7 +78,7 @@ img {
   position: relative;
 }
 /* Image for blog page */
-.header {
+.header .blog{
   background: url(../images/home/blog.jpg) no-repeat center center/cover;
   height: 30vh;
 }
