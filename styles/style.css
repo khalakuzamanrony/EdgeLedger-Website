@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  opacity: 0.8;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 0 30px;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #28a745;
+}
+
+.navbar h1 {
+  font-weight: 400;
+}
+
+/* Hero Section */
+.header {
+  background: url(../images/home/showcase.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+/* Image for blog page */
+.header {
+  background: url(../images/home/blog.jpg) no-repeat center center/cover;
+  height: 30vh;
+}
+
+
+.header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  padding: 0 20px;
+
+}
+
+.header .content h1 {
+  font-size: 55px;
+}
+
+.header .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+}
+
+.header * {
+  z-index: 111;
+}
+
+
+/* About Part */
+.icons {
+  padding: 30px;
+}
+
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.icons i {
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Cases */
+.cases img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* Teams */
+.team img {
+  border-radius: 50%;
+}
+
+/* Contact Form */
+.contact-form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: 1px solid #c9c8c8;
+  border-radius: 3px;
+}
+
+.contact-form input {
+  outline-color: #28a745;
+}
+
+.contact-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+
+
+/* Single post Page */
+.blog-post{
+  padding: 50px 30px;
+
+}
+.blog-post h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.blog-post meta{
+margin-bottom: 30px;
+}
+.blog-post img{
+border-radius: 50%;
+width: 300px;
+display: block;
+margin: 0 auto 30px;
+}
+
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #28a745;
+}
+
+.footer .social>* {
+  margin-right: 30px;
+}
+
+/* Responsive Mobile */
+@media(max-width:768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column, .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .team img{
+    width: 70%;
+  }
+
+}
