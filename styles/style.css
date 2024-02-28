@@ -62,6 +62,7 @@ img {
 .navbar a:hover {
   border-bottom: 2px solid #28a745;
 }
+
 .navbar .logo-link:hover {
   border-bottom: none
 }
@@ -77,8 +78,9 @@ img {
   color: #fff;
   position: relative;
 }
+
 /* Image for blog page */
-.blog{
+.blogx {
   background: url(../images/home/blog.jpg) no-repeat center center/cover;
   height: 30vh;
 }
@@ -183,24 +185,27 @@ img {
 
 
 /* Single post Page */
-.blog-post{
+.blog-post {
   padding: 50px 30px;
 
 }
-.blog-post h2{
+
+.blog-post h2 {
   font-size: 40px;
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
-.blog-post meta{
-margin-bottom: 30px;
+
+.blog-post meta {
+  margin-bottom: 30px;
 }
-.blog-post img{
-border-radius: 50%;
-width: 300px;
-display: block;
-margin: 0 auto 30px;
+
+.blog-post img {
+  border-radius: 50%;
+  width: 300px;
+  display: block;
+  margin: 0 auto 30px;
 }
 
 
@@ -228,9 +233,15 @@ margin: 0 auto 30px;
 
 /* Responsive Mobile */
 @media(max-width:768px) {
-  .header .content{
+  .header .content {
     text-align: center;
   }
+
+  .blogx .content h1 {
+    font-size: 30px;
+    padding-top: 80px;
+  }
+
   .navbar {
     flex-direction: column;
     height: 120px;
@@ -246,11 +257,13 @@ margin: 0 auto 30px;
     flex-direction: column;
   }
 
-  .flex-columns .column, .flex-grid .column {
+  .flex-columns .column,
+  .flex-grid .column {
     flex: 100%;
     max-width: 100%;
   }
-  .team img{
+
+  .team img {
     width: 70%;
   }
 
