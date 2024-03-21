@@ -24,6 +24,7 @@ h1,
 h2 {
   font-size: 30px;
   line-height: 1.2;
+  font-weight: 300;
 }
 
 p {
@@ -47,6 +48,10 @@ img {
   position: fixed;
   top: 0;
   padding: 0 30px;
+  transition: 0.5s;
+}
+.navbar.top{
+  background: transparent;
 }
 
 .navbar a {
@@ -170,13 +175,14 @@ img {
   width: 100%;
   padding: 4px;
   height: 40px;
-  border: 1px solid #c9c8c8;
-  border-radius: 3px;
+  border: 1px solid #f5f5f5;
+  /* border-radius: 3px; */
 }
 
-.contact-form input {
+.contact-form input:focus {
   outline-color: #28a745;
 }
+
 
 .contact-form .btn {
   padding: 12px 0;

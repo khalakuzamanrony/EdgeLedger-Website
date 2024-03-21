@@ -39,6 +39,9 @@
   background-color: #333;
   color: #fff;
 }
+.bg-light{
+  background-color: #f4f4f4;
+}
 
 .btn-light {
   background-color: #fff;
